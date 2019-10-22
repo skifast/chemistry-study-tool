@@ -1,0 +1,2 @@
+-the save & exit button saves your progress, so if you don't press save & exit your progress will not be saved
+-you're score improves only when you fill up all of the progress dots. You only get a progress dot if you get the quesiton correct
