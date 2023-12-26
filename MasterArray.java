@@ -23,17 +23,17 @@ public class MasterArray {
 	}
 	
 	public QuestionNode[] addToUnanswered(QuestionNode[] unanswered, String compoundTypes){
-		if(compoundTypes.equals("ternaryCompounds")){
+		if("ternaryCompounds".equals(compoundTypes)){
 			for(int i = 0; i < 101; i++){
 				unanswered[i] = masterArray[1][i];
 			}
 		}
-		else if(compoundTypes.equals("polyatomicIons")){
+		else if("polyatomicIons".equals(compoundTypes)){
 			for(int i = 0; i < 31; i++){
 				unanswered[i] = masterArray[0][i];
 			}
 		}
-		else if(compoundTypes.equals("both")){
+		else if("both".equals(compoundTypes)){
 			for(int i = 0; i < 31; i++){
 				unanswered[i] = masterArray[0][i];
 			}
