@@ -1,3 +1,4 @@
+import io.github.pixee.security.BoundedLineReader;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -40,7 +41,7 @@ public class IOFile {
 					//make array of strings when split line by ';'
 					//goes through this array and adds characters to node with index of int types
 					//if 1, = true; if 0, = false
-					while((line = bufferedReader.readLine()) != null){
+					while((line = BoundedLineReader.readLine(bufferedReader, 5_000_000)) != null){
 	
 						//Array of strings split by ";" 
 						//uses HashValue at word to find index
@@ -101,7 +102,7 @@ public class IOFile {
 
 			//make array of strings when split line by ';'
 
-			while((line = bufferedReader.readLine()) != null){
+			while((line = BoundedLineReader.readLine(bufferedReader, 5_000_000)) != null){
 
 				//Array of strings split by ";" 
 				String[] eachEle = line.split(";");
