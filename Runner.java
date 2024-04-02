@@ -327,7 +327,7 @@ public class Runner extends Applet implements Runnable, ActionListener{
 	public void actionPerformed(ActionEvent e){
 		//if next is pressed and the text box is not empty
 		//will not run if the text box is empty
-		if(e.getSource().equals(screen1b1) && !screen1tf1.getText().equals("")){
+		if(e.getSource().equals(screen1b1) && !"".equals(screen1tf1.getText())){
 			//username is assigned to the user input into the username box
 			username = screen1tf1.getText();
 			
