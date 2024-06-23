@@ -1,3 +1,4 @@
+import java.security.SecureRandom;
 import java.util.Random;
 
 public class Lottery{
@@ -9,7 +10,7 @@ public class Lottery{
 
 	/*Returns a random QuestionNode*/
 	public QuestionNode getRandomNode(QuestionNode[] lottery){
-		Random rand = new Random();
+		Random rand = new SecureRandom();
 		
 		int  n = rand.nextInt(9);
 		while(lottery[n] == null){
@@ -32,7 +33,7 @@ public class Lottery{
 		//4 unanswered
 		//if unanswered is empty go to easy
 		
-		Random rand = new Random();
+		Random rand = new SecureRandom();
 		
 		/*The following code generates decreasing numbers of random integers based
 		 * on the lengths of the various questionNodearrays. Since it is based off
